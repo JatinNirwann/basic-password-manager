@@ -44,7 +44,7 @@ When you run the script, you'll be presented with a menu:
 
 ## File Structure
 
-- `main.py`: The main Python script containing the password manager code.
+- `main.ipynb`: The main jupyter notebook containing python script.
 - `key.key`: Generated file containing the encryption key.
 - `passwords.txt`: File where encrypted passwords are stored.
 
