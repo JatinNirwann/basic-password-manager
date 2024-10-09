@@ -6,10 +6,11 @@ This is a simple command-line password manager implemented in Python. It allows 
 
 ## Features
 
-- Add new account credentials
-- View stored account credentials
+- Add new account credentials with account name, user ID, and password
+- View stored account credentials (account name, user ID, and decrypted password)
 - Encryption of passwords using the Fernet symmetric encryption
-- Local storage of encrypted passwords
+- Local storage of encrypted passwords in a `passwords.txt` file
+- Auto-generation and local storage of encryption key (`key.key`)
 
 ## Requirements
 
@@ -28,13 +29,15 @@ When you run the script, you'll be presented with a menu:
 ### Adding a Password
 
 1. Choose the `add` option.
-2. Enter the account name when prompted.
-3. Enter the password when prompted.
+2. Enter the account name (e.g., website or app name).
+3. Enter the account user ID.
+4. Enter the password.
+5. The password will be encrypted and stored locally in the `passwords.txt` file.
 
 ### Viewing Passwords
 
 1. Choose the `view` option.
-2. The program will display all stored account names and their corresponding decrypted passwords.
+2. The program will display all stored account names, user IDs, and their corresponding decrypted passwords.
 
 ## Security Notes
 
